@@ -1,0 +1,152 @@
+/* Container for the whole TextForm component */
+.container {
+  margin-top: 20px;
+  max-width: 100%;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 8px 10px lightyellow;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-dark {
+  color: black;
+}
+
+/* Dark background */
+.dark-bg {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Light background */
+.light-bg {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+/* Avatar container */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form controls and button container */
+.form-floating textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  resize: none;
+  direction: ltr;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* General Button Styling */
+.btn {
+  width: auto;
+  max-width: 150px;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  height: 45px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #ffeb3b;
+  border: none;
+  color: #1e1e1e;
+}
+
+.btn-primary:hover {
+  background-color: #e0c700;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin-bottom: 25px;  /* Add space between sections */
+  }
+
+  .avatar-img {
+    max-width: 200px;
+  }
+
+  .form-floating textarea {
+    font-size: 14px;
+    height: 120px;
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;  /* Full width buttons */
+    max-width: none;  /* Remove max-width constraint */
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin-bottom: 15px;  /* Reduce space between sections */
+  }
+
+  .avatar-img {
+    max-width: 150px;
+  }
+
+  .form-floating textarea {
+    font-size: 12px;
+    height: 100px;
+    padding: 8px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;  /* Full width buttons */
+    max-width: none;
+    font-size: 14px;
+    padding: 8px;
+  }
+}

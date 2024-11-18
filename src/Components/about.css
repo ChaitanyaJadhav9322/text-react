@@ -1,0 +1,123 @@
+.about-section {
+  margin-left:   150px; 
+  margin-top: 20px;
+  margin-right:150px;
+  margin-bottom: 50px;
+  padding: 20px;
+   
+   
+  border-radius: 8px;
+  box-shadow: 16px 32px 40px rgb(77, 77, 71);
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+   
+  transition: all 0.3s ease;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-section p{
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin-bottom: 25px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.feature ul {
+  font-size: 1rem;
+  color: #34495e;
+  margin-left: 20px;
+}
+
+.feature li {
+  margin-bottom: 8px;
+}
+
+ 
+.about-section.dark-bg {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  box-shadow: 4px 8px 10px #34495e;
+}
+
+.about-section.dark-bg h2,
+.textform-container.dark-bg h2,
+.about-section.dark-bg p,
+.textform-container.dark-bg p {
+  color: white;
+}
+
+.about-section.dark-bg .feature h3,
+.about-section.dark-bg .feature p,
+.about-section.dark-bg .feature ul {
+  color: #ecf0f1;
+}
+
+/* Light Mode Styles */
+.about-section.light-bg {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  box-shadow: 4px 8px 10px lightyellow;
+}
+
+.about-section.light-bg h2,
+.textform-container.light-bg h2,
+.about-section.light-bg p,
+.textform-container.light-bg p {
+  color: black;
+}
+
+.about-section.light-bg .feature h3,
+.about-section.light-bg .feature p,
+.about-section.light-bg .feature ul {
+  color: #34495e;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+      margin: 10px; /* Maintain spacing on smaller screens */
+      padding: 15px;
+      margin-bottom: 25px; /* Adjust bottom margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+      margin: 10px; /* Maintain spacing on very small screens */
+      padding: 10px;
+      margin-bottom: 15px; /* Reduce spacing between sections */
+  }
+
+  .about-section h2 {
+      font-size: 1.5rem; /* Adjust title font size */
+  }
+
+  .about-section p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Ensure proper spacing around textform-container as well */
+.textform-container {
+  margin: 10px; /* Added spacing around textform-container */
+}

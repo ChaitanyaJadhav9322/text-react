@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Left Side: Avatar */
+.left-side {
+  flex: 1 1 200px; /* Avatar takes up full width on smaller screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Set max-width to control image size */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Right Side: Thought Section */
+.right-side {
+  flex: 2 1 500px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 8px 10px rgba(255, 105, 180, 0.5); /* Light pink shadow */
+}
+
+.right-side h4 {
+  color: #d5006d; /* Pink color */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.thought-input {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d5006d;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+hr{
+  text-decoration: dashed;
+  height:2px;
+  color:linear-gradient(green,red,yellow);
+}
+
+.thought-input:focus {
+  border-color: #ff4081; /* Pink border on focus */
+  outline: none;
+}
+
+.btn-pink {
+  background-color: #d5006d; /* Pink background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-pink:hover {
+  background-color: #ff4081; /* Lighter pink on hover */
+}
+
+/* Display Thoughts */
+.thoughts-list {
+  margin-top: 20px;
+}
+
+.thought-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thought-item p {
+  margin: 0;
+}
+
+/* Dark Mode */
+.bg-dark {
+  background-color: #1e1e1e;
+}
+
+.text-light {
+  color: white;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}
+
+.text-dark {
+  color: black;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections on smaller screens */
+  }
+  
+  .left-side,
+  .right-side {
+    width: 100%; /* Make sections take full width on smaller screens */
+  }
+  
+  .avatar-img {
+    width: 100%; /* Ensure avatar image takes full width */
+  }
+}
+
+
+ 
