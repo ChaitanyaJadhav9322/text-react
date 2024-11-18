@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ChaitanyaJadhav9322/text-react.git/static/css/main.1e9bf300.css",
+    "main.js": "/ChaitanyaJadhav9322/text-react.git/static/js/main.055dc9ab.js",
+    "static/js/453.5b9aa0a5.chunk.js": "/ChaitanyaJadhav9322/text-react.git/static/js/453.5b9aa0a5.chunk.js",
+    "static/media/avtar.png": "/ChaitanyaJadhav9322/text-react.git/static/media/avtar.dbec6945f7b485a17020.png",
+    "index.html": "/ChaitanyaJadhav9322/text-react.git/index.html",
+    "main.1e9bf300.css.map": "/ChaitanyaJadhav9322/text-react.git/static/css/main.1e9bf300.css.map",
+    "main.055dc9ab.js.map": "/ChaitanyaJadhav9322/text-react.git/static/js/main.055dc9ab.js.map",
+    "453.5b9aa0a5.chunk.js.map": "/ChaitanyaJadhav9322/text-react.git/static/js/453.5b9aa0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e9bf300.css",
+    "static/js/main.055dc9ab.js"
+  ]
+}
